@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html,body {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  position: relative;
+}
+
+
+.container {
+  padding: 0 10%;
+}
+
+.hero {
+  background: url(../imgs/hero.jpg) no-repeat;
+  background-size: cover;
+  height: 770px;
+  width: 100%;
+}
+
+/****/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 30px;
+  width: 80%;
+  flex-basis: 100%;
+  backface-visibility: hidden;
+}
+
+.header-logo {
+  background: url(../imgs/logo-frontinsampa.png) no-repeat left;
+  width: 53px;
+  height: 60px;
+  padding-left: 1.5em;
+  padding-bottom: .2em;
+  transition: .4s;
+  text-indent: -9999px;
+}
+
+.header-nav {
+  list-style: none
+}
+
+.header-nav-item a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header-nav-item a:last-child {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  width: 154px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 2px #ffffff;
+}
+
+.header-nav-item a:hover{
+  color: #ff685c;
+}
+
+/*******/
+
+.hero-header{
+  font-family: Roboto;
+  font-size: 90px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin: 0;
+}
+
+.hero-logo{
+  background: url(../imgs/pattern.png) no-repeat left;
+  width: 209px;
+  height: 50px;
+  display: inline-block;
+}
+
+.hero-description{
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*******/

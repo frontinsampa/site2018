@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Roboto Regular';
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-osx-font-smoothing: 'grayscale';
+    -webkit-font-smoothing: 'antialiased';
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src:url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-osx-font-smoothing: 'grayscale';
+    -webkit-font-smoothing: 'antialiased';
+}
