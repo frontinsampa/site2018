@@ -60,8 +60,7 @@ const styles = {
     height: 110,
     backgroundSize: 'contain',
     display: 'block',
-    WebkitFilter: 'grayscale(100%)',
-    filter: 'grayscale(100%)',
+    borderBottom: '3px inset transparent',
     margin: '0 auto',
     backgroundRepeat: 'no-repeat',
     position: 'relative',
@@ -69,9 +68,9 @@ const styles = {
       width: 110
     },
     '&:hover':{
-      WebkitFilter: 'grayscale(0%)',
-      filter: 'grayscale(0%)',
-      transition: '210ms'
+      borderBottom: '3px inset ' + Globals.colors.red,
+      transition: '210ms',
+      cursor: 'pointer'
     }
   }),
   infos: css({
@@ -112,7 +111,7 @@ const content = {
       src: reactconfbr
     },
     {
-      link: 'http://www.codamos.com.br/',
+      link: 'http://www.codamos.club/',
       alt: 'codamos',
       src: codamos
     }
@@ -131,8 +130,8 @@ export default class Apoiadores extends Component {
                 {content.sponsors.map((photo,index) => {
                   return(
                     <li key={index}>
-                      <a tabIndex='10' href={photo.link}>
-                        <img src={photo.src} alt={photo.alt} {...styles.src}/>
+                      <a tabIndex='10' href={photo.link} target="_blank" >
+                        <img src={photo.src} alt={photo.alt} title={photo.alt} {...styles.src}/>
                       </a>
                     </li>
                   )

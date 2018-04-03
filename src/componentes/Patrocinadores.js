@@ -9,7 +9,7 @@ import speaker_rfabeni from '../imgs/speaker_rfabeni.png'
 import locaweb from '../imgs/locaweb.png'
 import neon from '../imgs/neon.png'
 import contaazul from '../imgs/contaazul.png'
-import redventures from '../imgs/redventures.png'
+import iq360 from '../imgs/iq360.png'
 
 const styles = {
   hero:css({
@@ -61,6 +61,7 @@ const styles = {
     backgroundSize: 'contain',
     display: 'block',
     margin: '0 auto',
+    borderBottom: '3px inset transparent',
     backgroundRepeat: 'no-repeat',
     position: 'relative',
     '@media(min-width:1024px)':{
@@ -68,6 +69,11 @@ const styles = {
     },
     '@media(min-width:1100px)':{
       width: 241
+    },
+    '&:hover':{
+      borderBottom: '3px inset ' + Globals.colors.red,
+      transition: '210ms',
+      cursor: 'pointer'
     }
   }),
   infos: css({
@@ -88,24 +94,24 @@ const content = {
   role: 'link',
   sponsors: [
     {
-      link: 'http://locaweb.com.br',
-      alt: 'locaweb',
+      link: 'https://locaweb.com.br/',
+      alt: 'Locaweb',
       src: locaweb
     },
     {
       link: 'https://www.banconeon.com.br/',
-      alt: 'neon',
+      alt: 'Banco Neon',
       src: neon
     },
     {
       link: 'https://contaazul.com/',
-      alt: 'contaazul',
+      alt: 'Conta Azul',
       src: contaazul
     },
     {
-      link: 'https://www.redventures.com/',
-      alt: 'redventures',
-      src: redventures
+      link: 'https://www.iq360.com.br/',
+      alt: 'IQ 360',
+      src: iq360
     }
   ]
 }
@@ -113,7 +119,7 @@ const content = {
 export default class Patrocinadores extends Component {
 
     render(){
-        return (
+      return (
         <div {...styles.hero} role={content.link} id={content.id}>
           <div {...styles.container}>
             <Text type={content.title.type} label={content.title.header} align={content.title.align} width={content.title.width} margin={content.title.margin} color={content.title.color} />
@@ -122,8 +128,8 @@ export default class Patrocinadores extends Component {
                 {content.sponsors.map((photo,index) => {
                   return(
                     <li key={index}>
-                      <a tabIndex='9' href={photo.link}>
-                        <img src={photo.src} alt={photo.alt} {...styles.src}/>
+                      <a tabIndex='9' href={photo.link} target="_blank">
+                        <img src={photo.src} alt={photo.alt} title={photo.alt} {...styles.src}/>
                       </a>
                     </li>
                   )

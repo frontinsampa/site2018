@@ -123,26 +123,26 @@ const content = {
   role: 'link',
   sponsors: [
     {
-      twitter: ['twitter', 'rfabeni'],
-      github: ['github','rfabeni'],
+      twitter: ['twitter', 'deividmarques'],
+      github: ['github','deividmarques'],
       name: 'deivid marques',
       src: construtores_deivid
     },
     {
-      twitter: ['twitter', 'rfabeni'],
-      github: ['github','rfabeni'],
+      twitter: ['twitter', 'seescrevekeit'],
+      github: ['github','keitoliveira'],
       name: 'keit oliveira',
       src: construtores_keit
     },
     {
-      twitter: ['twitter', 'rfabeni'],
-      github: ['github','rfabeni'],
+      twitter: ['twitter', 'marcobrunobr'],
+      github: ['github','marcobrunobr'],
       name: 'marco bruno',
       src: construtores_marco
     },
     {
-      twitter: ['twitter', 'rfabeni'],
-      github: ['github','rfabeni'],
+      twitter: ['twitter', 'dnvtrn'],
+      github: ['github','danvitoriano'],
       name: 'dan vitoriano',
       src: construtores_dan
     }

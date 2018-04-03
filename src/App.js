@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import {css} from 'glamor'
 import Globals from './Globals'
 
-import WheelReact from 'wheel-react';
-import Particles from 'react-particles-js';
-
 import Header from './componentes/Header'
 import Evento from './componentes/Evento'
 import Palestrantes from './componentes/Palestrantes'
@@ -39,39 +36,9 @@ const styles = {
 
 class App extends Component {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      content: 'Move your mouse mouse wheel or trackpad or try to scroll here!'
-    };
-    WheelReact.config({
-      left: () => {
-        this.setState({
-          content: 'left direction detected.'
-        });
-      },
-      right: () => {
-        this.setState({
-          content: 'right direction detected.'
-        });
-      },
-      up: () => {
-        this.setState({
-          content: 'up direction detected.'
-        });
-      },
-      down: () => {
-        this.setState({
-          content: 'down direction detected.'
-        });
-      }
-    });
-  }
-
   render() {    
     return (
-    <div id="root" {...styles.root} {...WheelReact.events} tabIndex="1">
-      <div {...styles.mousewheel}>{this.state.content}</div>
+    <div id="root" {...styles.root} tabIndex="1">
       <div {...styles.main}>
         <Header/>
         <Evento/>

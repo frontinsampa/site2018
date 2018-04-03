@@ -91,7 +91,7 @@ export default class Evento extends Component {
               <div>
                 <Text type={content.title.type} label={content.title.header} color={content.title.color}/>
                 <p {...styles.description}>{content.description}</p>
-                <Button tabIndex="4" type={content.button} label={content.label} href={content.link} />
+                <Button tabIndex="4" type={content.button} label={content.label} href={content.link} target="_blank" />
               </div>
             </div>
           </div>
