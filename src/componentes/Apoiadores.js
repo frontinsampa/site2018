@@ -4,12 +4,12 @@ import Globals from './../Globals'
 
 import Button from './Button'
 import Text from './Text'
-import speaker_julian from '../imgs/speaker_julian.png'
-import speaker_rfabeni from '../imgs/speaker_rfabeni.png'
-import locaweb from '../imgs/locaweb.png'
-import neon from '../imgs/neon.png'
-import contaazul from '../imgs/contaazul.png'
-import redventures from '../imgs/redventures.png'
+import frontendbrasil from '../imgs/apoio-frontendbrasil.png'
+import dne from '../imgs/apoio-dne.png'
+import frontincampinas from '../imgs/apoio-frontincampinas.png'
+import reactconfbr from '../imgs/apoio-reactconfbr.png'
+import codamos from '../imgs/apoio-codamos.png'
+
 
 const styles = {
   hero:css({
@@ -56,18 +56,22 @@ const styles = {
     }
   }),
   src: css({
-    width: 241,
-    height: 130,
+    width: 110,
+    height: 110,
     backgroundSize: 'contain',
     display: 'block',
+    WebkitFilter: 'grayscale(100%)',
+    filter: 'grayscale(100%)',
     margin: '0 auto',
     backgroundRepeat: 'no-repeat',
     position: 'relative',
     '@media(min-width:1024px)':{
-      width: 241
+      width: 110
     },
-    '@media(min-width:1100px)':{
-      width: 241
+    '&:hover':{
+      WebkitFilter: 'grayscale(0%)',
+      filter: 'grayscale(0%)',
+      transition: '210ms'
     }
   }),
   infos: css({
@@ -78,39 +82,44 @@ const styles = {
 }
 
 const content = {
-  id: 'patrocinadores',
+  id: 'apoiadores',
   title: {
     type: 'h3',
-    header: 'patrocinadores',
+    header: 'apoiadores',
     align: 'center',
     color: [Globals.colors.white,Globals.colors.white]
   },
   role: 'link',
   sponsors: [
     {
-      link: 'http://locaweb.com.br',
-      alt: 'locaweb',
-      src: locaweb
+      link: 'https://github.com/frontendbr',
+      alt: 'frontend brasil',
+      src: frontendbrasil
     },
     {
-      link: 'https://www.banconeon.com.br/',
-      alt: 'neon',
-      src: neon
+      link: 'https://devnaestrada.com.br/',
+      alt: 'devnaestrada',
+      src: dne
     },
     {
-      link: 'https://contaazul.com/',
-      alt: 'contaazul',
-      src: contaazul
+      link: 'https://frontincampinas.com.br/',
+      alt: 'front in campinas',
+      src: frontincampinas
     },
     {
-      link: 'https://www.redventures.com/',
-      alt: 'redventures',
-      src: redventures
+      link: 'http://www.reactconfbr.com.br/',
+      alt: 'reactconfbr',
+      src: reactconfbr
+    },
+    {
+      link: 'http://www.codamos.com.br/',
+      alt: 'codamos',
+      src: codamos
     }
   ]
 }
 
-export default class Patrocinadores extends Component {
+export default class Apoiadores extends Component {
 
     render(){
         return (
@@ -122,7 +131,7 @@ export default class Patrocinadores extends Component {
                 {content.sponsors.map((photo,index) => {
                   return(
                     <li key={index}>
-                      <a tabIndex='9' href={photo.link}>
+                      <a tabIndex='10' href={photo.link}>
                         <img src={photo.src} alt={photo.alt} {...styles.src}/>
                       </a>
                     </li>

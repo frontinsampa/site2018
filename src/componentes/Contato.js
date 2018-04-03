@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {css} from 'glamor'
 import Globals from './../Globals'
 
+import Footer from './Footer'
 import Button from './Button'
 import Text from './Text'
 import logo from '../imgs/logo-frontinsampa-evento.png'
@@ -15,7 +16,8 @@ const styles = {
     "height": "500px",
     margin: '0 auto',
     '@media(min-width: 1024px)':{
-      maxWidth: 1024
+      maxWidth: 1024,
+      "height": "100vh"
     }
   }),
   main: css({
@@ -71,22 +73,25 @@ const content = {
   role: 'link',
   align: 'center',
   description: 'Quer patrocinar, tirar dúvidas ou mandar sugestões?',
-  mailto: 'frontinsampa@gmail.com'
+  link: 'mailto:frontinsampa@gmail.com'
 }
 
 export default class Evento extends Component {
 
     render(){
         return (
-        <div {...styles.hero} role={content.role} id={content.id}>
-          <div {...styles.container}>
-            <div  {...styles.main}>
-              <div>
-                <Text type={'upper'} label={content.description} align={content.align} />
-                <Button type={content.title.type} label={content.title.header} link={content.mailto} />
+        <div>
+          <div {...styles.hero} role={content.role} id={content.id}>
+            <div {...styles.container}>
+              <div  {...styles.main}>
+                <div>
+                  <Text type={'upper'} label={content.description} align={content.align} />
+                  <Button tabIndex='12' type={content.title.type} label={content.title.header} link={content.link} />
+                </div>
               </div>
             </div>
           </div>
+          <Footer/>
         </div>
         )
     }

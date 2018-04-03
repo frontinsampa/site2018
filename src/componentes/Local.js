@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {css,style} from 'glamor'
+import {css} from 'glamor'
 import Globals from './../Globals'
 
 import Button from './Button'
@@ -21,6 +21,7 @@ const styles = {
     width: '90%',
     "height": "2000px",
     paddingTop: 60,
+    textAlign: 'center',
     margin: '0 auto',
     '@media(min-width: 768px)':{
       paddingTop: 60,
@@ -33,9 +34,12 @@ const styles = {
       "height": "770px"
     }
   }),
+  wrapperButton: css({
+    paddingTop: 30
+  }),
   main: css({
     "position": "relative",
-    "top": "35%",
+    "top": "30%",
     "transform": "translateY(-50%)",
     "MozTransform": "translateY(-50%)",
     "WebkitTransform": "translateY(-50%)",
@@ -114,15 +118,18 @@ export default class Local extends Component {
           <div {...styles.container}>
             <Text type={content.title.type} label={content.title.header} align={content.title.align} width={content.title.width} margin={content.title.margin} color={content.title.color} />
             <Text type={'normal'} label={content.title.description} align={content.title.align}/>
-              <ul {...styles.main}>
-                {content.photos.map((photo,index) => {
-                  return(
-                    <li key={index}>
-                      <img src={photo.src} alt="maksoud plaza" {...styles.src}/>
-                    </li>
-                  )
-                })}
-              </ul>
+            <ul {...styles.main}>
+              {content.photos.map((photo,index) => {
+                return(
+                  <li key={index}>
+                    <img src={photo.src} alt="maksoud plaza" {...styles.src}/>
+                  </li>
+                )
+              })}
+            </ul>
+            <div {...styles.wrapperButton}>
+              <Button tabIndex="7" type={'submit'} label="Ver no Mapa" link="https://goo.gl/maps/yF3bHmXUBav" target={'_blank'}/>
+            </div>
           </div>
         </div>
         )

@@ -4,7 +4,6 @@ import Globals from './../Globals'
 
 import Button from './Button'
 import Text from './Text'
-import logo from '../imgs/logo-frontinsampa-evento.png'
 
 const styles = {
   hero:css({
@@ -32,41 +31,28 @@ const styles = {
       verticalAlign: 'middle',
       ':first-child':{
         textAlign: 'center',
+        // height: 50,
+        // paddingTop: 10,
+        marginTop: '-5px',
+        marginBottom: 15,
         '@media(min-width: 1024px)':{
           textAlign: 'left'
         }
       },
       ':last-child':{
         textAlign: 'center',
+        // height: 50,
+        marginTop: 10,
+        // marginBottom: 15,
         '@media(min-width: 1024px)':{
           textAlign: 'right'
         }
+      },
+      '> a':{
+        color: Globals.colors.yellow,
+        textDecoration: 'none'
       }
     }
-  }),
-  logo: css({
-    maxWidth: 150,
-    display: 'block',
-    margin: '0 auto',
-    '@media(min-width: 570px)':{
-      maxWidth: '100%'
-    }
-  }),
-  header: css({
-    "backgroundImage": `linear-gradient(to right, ${Globals.colors.red}, ${Globals.colors.purple}), linear-gradient(${Globals.colors.white}, ${Globals.colors.white})`,
-    "fontFamily": Globals.fonts.bold,
-    "fontSize": "36px",
-    "lineHeight": "1.39",
-    "WebkitBackgroundClip": "text",
-    "backgroundClip": "text",
-    textTransform: 'uppercase',
-    "WebkitTextFillColor": "transparent"
-  }),
-  description: css({
-    "fontFamily": Globals.fonts.regular,
-    "fontSize": "18px",
-    "lineHeight": "1.67",
-    "color": Globals.colors.white
   })
 }
 
@@ -79,7 +65,7 @@ const content = {
   },
   role: 'link',
   align: 'center',
-  description: 'Always Creative, Always Brave.',
+  description: 'Front In Sampa. Todos os direitos reservados.',
   twitter: ['twitter', 'frontinsp'],
   github: ['github', 'frontinsampa'],
   instagram: ['instagram','frontinsampa'],
@@ -95,14 +81,15 @@ export default class Evento extends Component {
           <div {...styles.container}>
             <div  {...styles.main}>
               <span>
-                <Text type={'normal'} label={content.description} />  
+                <a tabIndex='13' href="http://pt-br.confcodeofconduct.com/" target='_blank'>Código de Conduta</a>
+                <Text type={'small'} label={content.description} />  
               </span>
               <span>
-                <Button type={content.twitter[0]} link={content.twitter[1]}/>
-                <Button type={content.instagram[0]} link={content.instagram[1]}/>
-                <Button type={content.facebook[0]} link={content.facebook[1]}/>
-                <Button type={content.youtube[0]} link={content.youtube[1]}/>
-                <Button type={content.github[0]} link={content.github[1]}/>
+                <Button tabIndex='14' type={content.twitter[0]} link={content.twitter[1]}/>
+                <Button tabIndex='14' type={content.instagram[0]} link={content.instagram[1]}/>
+                <Button tabIndex='14' type={content.facebook[0]} link={content.facebook[1]}/>
+                <Button tabIndex='14' type={content.youtube[0]} link={content.youtube[1]}/>
+                <Button tabIndex='14' type={content.github[0]} link={content.github[1]}/>
               </span>
             </div>
           </div>

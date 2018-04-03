@@ -81,12 +81,10 @@ const content = {
   },
   img: apresentador,
   role: 'link',
-  twitter: ['twitter', 'rfabeni'],
-  github: ['github','rfabeni'],
   alt: 'Matheus Marsiglio',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
-  twitter: ['twitter', 'mmarsiglio'],
-  github: ['github','mmarsiglio']
+  description: 'Tão tradicional quanto o evento, Matheus Marsiglio será o apresentador mais uma vez. Ele é Software developer, co-criador do FrontUX, palestrante, e segundo sua próprias palavras, faz código parecer algo "cool" resolvendo problemas que você talvez nem saiba ter.',
+  twitter: ['twitter', 'mtmr0x'],
+  github: ['github','mtmr0x']
 }
 
 export default class Apresentador extends Component {
@@ -99,8 +97,8 @@ export default class Apresentador extends Component {
               <div {...styles.infoWrapper}>
                 <Text type={content.title.type} label={content.title.header} color={content.title.color}/>
                 <p {...styles.description}>{content.description}</p>
-                <Button type={content.twitter[0]} link={content.twitter[1]}/>
-                <Button type={content.github[0]} link={content.github[1]}/>
+                <Button tabIndex="5" type={content.twitter[0]} link={content.twitter[1]}/>
+                <Button tabIndex="6" type={content.github[0]} link={content.github[1]}/>
               </div>
               <div>
                 <img src={content.img} alt={content.alt} {...styles.apresentador} />

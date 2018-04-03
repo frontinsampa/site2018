@@ -27,6 +27,13 @@ const styles ={
     "lineHeight": "1.67",
     color: Globals.colors.white
   }),
+  small: css({
+    "fontFamily": Globals.fonts.regular,
+    "fontSize": "14px",
+    margin: 0,
+    "lineHeight": "1.41",
+    color: Globals.colors.white
+  }),
   upper: css({
     "fontFamily": Globals.fonts.regular,
     "fontSize": "28px",
@@ -59,6 +66,14 @@ export default class Text extends Component{
 			case 'normal':
 				return(
 					<p {...styles.normal} {...style({ 
+							textAlign: `${this.props.align}`
+						})}>
+						{this.props.label}
+					</p>	
+				)
+			case 'small':
+				return(
+					<p {...styles.small} {...style({ 
 							textAlign: `${this.props.align}`
 						})}>
 						{this.props.label}

@@ -4,7 +4,6 @@ import Globals from './../Globals'
 
 import Button from './Button'
 import Text from './Text'
-import logo from '../imgs/logo-frontinsampa-evento.png'
 
 const styles = {
   hero:css({
@@ -12,7 +11,7 @@ const styles = {
   }),
   container:css({
     width: '90%',
-    "height": "770px",
+    "height": "500px",
     margin: '0 auto',
     '@media(min-width: 1024px)':{
       maxWidth: 1024,
@@ -36,14 +35,6 @@ const styles = {
       flex: 1
     }
   }),
-  logo: css({
-    maxWidth: 150,
-    display: 'block',
-    margin: '0 auto',
-    '@media(min-width: 570px)':{
-      maxWidth: '100%'
-    }
-  }),
   header: css({
     "backgroundImage": `linear-gradient(to right, ${Globals.colors.red}, ${Globals.colors.purple}), linear-gradient(${Globals.colors.white}, ${Globals.colors.white})`,
     "fontFamily": Globals.fonts.bold,
@@ -63,35 +54,30 @@ const styles = {
 }
 
 const content = {
-  id: 'evento',
+  id: 'contato',
   title: {
-    type: 'h3',
-    header: 'O mais tradicional evento sobre front-end',
-    color: [Globals.colors.red,Globals.colors.purple]
+    type: 'super',
+    header: 'envie sua palestra',
+    color: [Globals.colors.purple,Globals.colors.yellow]
   },
   role: 'link',
-  img: logo,
-  alt: 'Front In Sampa',
-  description: 'Em Julho estamos de volta ao Teatro do Maksoud Plaza Hotel, para reunir a comunidade em torno do melhor conteúdo sobre desenvolvimento de interfaces através de apresentações inesquecíveis.',
-  button: 'submit',
-  label: 'Inscreva-se',
-  link: 'https://www.sympla.com.br/front-in-sampa-2018__193402'
+  align: 'center',
+  description: 'Quer se apresentar no Front In Sampa 2018?',
+  link: 'https://www.papercall.io/frontinsampa2018'
 }
 
-export default class Evento extends Component {
+export default class CallForPapers extends Component {
 
     render(){
         return (
-        <div {...styles.hero} role={content.role} id={content.id}>
-          <div {...styles.container}>
-            <div {...styles.main}>
-              <div>
-                <img src={content.img} alt={content.alt} {...styles.logo} />
-              </div>
-              <div>
-                <Text type={content.title.type} label={content.title.header} color={content.title.color}/>
-                <p {...styles.description}>{content.description}</p>
-                <Button tabIndex="4" type={content.button} label={content.label} href={content.link} />
+        <div>
+          <div {...styles.hero} role={content.role} id={content.id}>
+            <div {...styles.container}>
+              <div  {...styles.main}>
+                <div>
+                  <Text type={'upper'} label={content.description} align={content.align} />
+                  <Button tabIndex='8' type={content.title.type} label={content.title.header} link={content.link} target='_blank' />
+                </div>
               </div>
             </div>
           </div>

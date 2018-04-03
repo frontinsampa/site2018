@@ -1,6 +1,24 @@
 @font-face {
+    font-family: 'Roboto Mono Regular';
+    src:url('../fonts/RobotoMono-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-osx-font-smoothing: 'grayscale';
+    -webkit-font-smoothing: 'antialiased';
+}
+
+@font-face {
+    font-family: 'Roboto Mono Bold';
+    src:url('../fonts/RobotoMono-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-osx-font-smoothing: 'grayscale';
+    -webkit-font-smoothing: 'antialiased';
+}
+
+@font-face {
     font-family: 'Roboto Regular';
-    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src:url('../fonts/Roboto-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     -moz-osx-font-smoothing: 'grayscale';
@@ -9,7 +27,7 @@
 
 @font-face {
     font-family: 'Roboto Bold';
-    src:url('../fonts/Roboto-Bold.ttf') format('truetype');
+    src:url('../fonts/Roboto-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     -moz-osx-font-smoothing: 'grayscale';

@@ -55,10 +55,39 @@ const styles = {
       padding: '10px 0'
     }
   }),
+  photo: css({
+    width: 241,
+    height: 250,
+    backgroundSize: 'contain',
+    WebkitFilter: 'grayscale(100%)',
+    filter: 'grayscale(100%)',
+    display: 'block',
+    margin: '0 auto',
+    backgroundRepeat: 'no-repeat',
+    position: 'relative',
+    overflow: 'hidden',
+    '> div':{
+      transition: '210ms ease-in',
+      marginBottom: -100
+    },
+    '&:hover':{
+      WebkitFilter: 'grayscale(0%)',
+      filter: 'grayscale(0%)',
+      transition: '210ms',
+      cursor: 'pointer',
+      '> div':{
+        marginBottom: 0
+      }
+    },
+    '@media(min-width:1024px)':{
+      width: 241
+    }
+  }),
   src: css({
     width: 241,
     height: 250,
     backgroundSize: 'contain',
+    
     display: 'block',
     margin: '0 auto',
     backgroundRepeat: 'no-repeat',
@@ -72,8 +101,14 @@ const styles = {
   }),
   infos: css({
     position: 'absolute',
-    bottom: 30,
-    left: 30
+    width: '100%',
+    display: 'block',
+    background: "linear-gradient(to bottom, transparent, rgba(0,0,0,1))",
+    paddingBottom: 20,
+    paddingTop: 50,
+    bottom: 0,
+    left: 0,
+    paddingLeft: 30
   })
 }
 
@@ -88,23 +123,27 @@ const content = {
   role: 'link',
   sponsors: [
     {
-      link: 'http://',
-      alt: 'deivid',
+      twitter: ['twitter', 'rfabeni'],
+      github: ['github','rfabeni'],
+      name: 'deivid marques',
       src: construtores_deivid
     },
     {
-      link: 'http://',
-      alt: 'keit',
+      twitter: ['twitter', 'rfabeni'],
+      github: ['github','rfabeni'],
+      name: 'keit oliveira',
       src: construtores_keit
     },
     {
-      link: 'http://',
-      alt: 'marco',
+      twitter: ['twitter', 'rfabeni'],
+      github: ['github','rfabeni'],
+      name: 'marco bruno',
       src: construtores_marco
     },
     {
-      link: 'http://',
-      alt: 'dan',
+      twitter: ['twitter', 'rfabeni'],
+      github: ['github','rfabeni'],
+      name: 'dan vitoriano',
       src: construtores_dan
     }
   ]
@@ -122,9 +161,13 @@ export default class Construtores extends Component {
                 {content.sponsors.map((photo,index) => {
                   return(
                     <li key={index}>
-                      <a href={photo.link}>
-                        <img src={photo.src} alt={photo.alt} {...styles.src}/>
-                      </a>
+                      <div {...style({ backgroundImage: `url(${photo.src})`})} {...styles.photo}>
+                        <div {...styles.infos}>
+                          <Text type={'h6'} label={photo.name}/>
+                          <Button tabIndex='11' type={photo.twitter[0]} link={photo.twitter[1]}/>
+                          <Button tabIndex='11' type={photo.github[0]} link={photo.github[1]}/>
+                        </div>
+                      </div>
                     </li>
                   )
                 })}
