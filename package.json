@@ -2,7 +2,7 @@
   "name": "site2018",
   "version": "0.1.0",
   "license": "SEE LICENSE IN LICENSE",
-  "homepage": "https://fullcircle.com.br/frontinsampa",
+  "homepage": "http://frontinsampa.com.br",
   "private": true,
   "dependencies": {
     "fullpage-react": "^3.0.30",

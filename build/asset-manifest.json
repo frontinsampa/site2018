@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.5312573c.css",
-  "main.css.map": "static/css/main.5312573c.css.map",
-  "main.js": "static/js/main.cde0221d.js",
-  "main.js.map": "static/js/main.cde0221d.js.map",
+  "main.css": "static/css/main.76a870bd.css",
+  "main.css.map": "static/css/main.76a870bd.css.map",
+  "main.js": "static/js/main.797212a6.js",
+  "main.js.map": "static/js/main.797212a6.js.map",
   "static/media/Roboto-Light.ttf": "static/media/Roboto-Light.fc84e998.ttf",
   "static/media/Roboto-Medium.ttf": "static/media/Roboto-Medium.d0884059.ttf",
   "static/media/RobotoMono-Light.ttf": "static/media/RobotoMono-Light.b82d827b.ttf",
@@ -19,11 +19,5 @@
   "static/media/maksoud3.png": "static/media/maksoud3.2ffa82b0.png",
   "static/media/maksoud4.png": "static/media/maksoud4.d24fbd58.png",
   "static/media/maksoud5.png": "static/media/maksoud5.73abb969.png",
-  "static/media/maksoud6.png": "static/media/maksoud6.4c96374c.png",
-  "static/media/speaker_1.png": "static/media/speaker_1.3fd80da5.png",
-  "static/media/speaker_2.png": "static/media/speaker_2.e7269fb4.png",
-  "static/media/speaker_3.png": "static/media/speaker_3.18c0a370.png",
-  "static/media/speaker_4.png": "static/media/speaker_4.63167006.png",
-  "static/media/speaker_julian.png": "static/media/speaker_julian.bb78e85a.png",
-  "static/media/speaker_rfabeni.png": "static/media/speaker_rfabeni.b0836876.png"
+  "static/media/maksoud6.png": "static/media/maksoud6.4c96374c.png"
 }
