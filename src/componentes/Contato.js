@@ -5,7 +5,6 @@ import Globals from './../Globals'
 import Footer from './Footer'
 import Button from './Button'
 import Text from './Text'
-import logo from '../imgs/logo-frontinsampa-evento.png'
 
 const styles = {
   hero:css({

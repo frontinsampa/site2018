@@ -4,7 +4,6 @@ import Globals from './Globals'
 
 import Header from './componentes/Header'
 import Evento from './componentes/Evento'
-import Palestrantes from './componentes/Palestrantes'
 import Apresentador from './componentes/Apresentador'
 import Local from './componentes/Local'
 import CallForPapers from './componentes/CallForPapers'

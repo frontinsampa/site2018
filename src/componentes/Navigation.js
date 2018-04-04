@@ -98,7 +98,7 @@ export default class Navigation extends Component {
 		        )
 		      })}
 		      <li {...styles.header_nav_link}>
-		      	<Button tabIndex="3" type={'outline'} label="INSCREVA-SE" link="https://www.sympla.com.br/front-in-sampa-2018__193402" target={'_blank'}/>
+		      	<Button tabIndex="3" type={'outline'} label="INSCREVA-SE" link="https://www.sympla.com.br/front-in-sampa-2018__193402" target={'_blank'}  rel="noopener noreferrer" />
           </li>
         </ul>
       </nav>

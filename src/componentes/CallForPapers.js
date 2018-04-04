@@ -76,7 +76,7 @@ export default class CallForPapers extends Component {
               <div  {...styles.main}>
                 <div>
                   <Text type={'upper'} label={content.description} align={content.align} />
-                  <Button tabIndex='8' type={content.title.type} label={content.title.header} link={content.link} target='_blank' />
+                  <Button tabIndex='8' type={content.title.type} label={content.title.header} link={content.link} target='_blank' rel="noopener noreferrer" />
                 </div>
               </div>
             </div>

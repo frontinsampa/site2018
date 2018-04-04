@@ -4,8 +4,6 @@ import Globals from './../Globals'
 
 import Button from './Button'
 import Text from './Text'
-import speaker_julian from '../imgs/speaker_julian.png'
-import speaker_rfabeni from '../imgs/speaker_rfabeni.png'
 import maksoud1 from '../imgs/maksoud1.png'
 import maksoud2 from '../imgs/maksoud2.png'
 import maksoud3 from '../imgs/maksoud3.png'

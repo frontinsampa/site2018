@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import {css,style} from 'glamor'
+import {css} from 'glamor'
 import Globals from './../Globals'
 
-import Button from './Button'
 import Text from './Text'
 import frontendbrasil from '../imgs/apoio-frontendbrasil.png'
 import dne from '../imgs/apoio-dne.png'
@@ -28,7 +27,7 @@ const styles = {
     '@media(min-width: 1024px)':{
       paddingTop: 103,
       maxWidth: 1024,
-      "height": "500px"
+      "height": "100vh"
     }
   }),
   card: css({
@@ -165,6 +164,7 @@ export default class Apoiadores extends Component {
                         {...css({
                           backgroundImage: `url('${photo.src}')`,
                           backgroundSize: 'cover',
+                          cursor: 'pointer',
                           backgroundPosition: 'center',
                           height: 110,
                           display: 'block'

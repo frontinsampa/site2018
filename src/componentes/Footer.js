@@ -81,7 +81,7 @@ export default class Evento extends Component {
           <div {...styles.container}>
             <div  {...styles.main}>
               <span>
-                <a tabIndex='13' href="http://pt-br.confcodeofconduct.com/" target='_blank'>Código de Conduta</a>
+                <a tabIndex='13' href="http://pt-br.confcodeofconduct.com/" target='_blank' rel="noopener noreferrer">Código de Conduta</a>
                 <Text type={'small'} label={content.description} />  
               </span>
               <span>

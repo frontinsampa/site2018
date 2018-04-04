@@ -36,7 +36,6 @@ const styles ={
     "lineHeight": "1.67",
     "textAlign": "center",
     textTransform: 'uppercase',
-    transition: '210ms',
     textDecoration: 'none',
     "color": Globals.colors.white,
     cursor: 'pointer',
@@ -125,13 +124,13 @@ export default class Button extends Component{
 		switch(this.props.type){
 			case 'outline':
 				return(
-					<a tabIndex={this.props.tabIndex} href={this.props.link} {...styles.outline} target={this.props.target}>
+					<a tabIndex={this.props.tabIndex} href={this.props.link} {...styles.outline} target={this.props.target} rel={this.props.rel}>
 						<span>{this.props.label}</span>
 					</a>
 				)
       case 'submit':
 				return(
-					<a tabIndex={this.props.tabIndex} href={this.props.link} {...styles.submit} target={this.props.target}>{this.props.label}</a>
+					<a tabIndex={this.props.tabIndex} href={this.props.link} {...styles.submit} target={this.props.target} rel={this.props.rel}>{this.props.label}</a>
 				)
 			case 'twitter':
 				return(
@@ -165,7 +164,7 @@ export default class Button extends Component{
 				)
 			case 'super':
 				return(
-					<a tabIndex={this.props.tabIndex} href={this.props.link} {...styles.super} target={this.props.target}>{this.props.label}</a>
+					<a tabIndex={this.props.tabIndex} href={this.props.link} {...styles.super} target={this.props.target} rel={this.props.rel}>{this.props.label}</a>
 				)
 			default:
 			return null

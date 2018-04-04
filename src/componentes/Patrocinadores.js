@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
-import {css,style} from 'glamor'
+import {css} from 'glamor'
 import Globals from './../Globals'
 
-import Button from './Button'
 import Text from './Text'
-import speaker_julian from '../imgs/speaker_julian.png'
-import speaker_rfabeni from '../imgs/speaker_rfabeni.png'
 import locaweb from '../imgs/locaweb.png'
 import neon from '../imgs/neon.png'
 import contaazul from '../imgs/contaazul.png'
@@ -17,7 +14,7 @@ const styles = {
   }),
   container:css({
     width: '90%',
-    "height": "770px",
+    "height": "900px",
     paddingTop: 60,
     margin: '0 auto',
     '@media(min-width: 768px)':{
@@ -28,7 +25,7 @@ const styles = {
     '@media(min-width: 1024px)':{
       paddingTop: 103,
       maxWidth: 1024,
-      "height": "500px"
+      "height": "100vh"
     }
   }),
   card: css({
@@ -164,6 +161,7 @@ export default class Patrocinadores extends Component {
                           backgroundSize: 'cover',
                           backgroundPosition: 'center',
                           height: 130,
+                          cursor: 'pointer',
                           display: 'block'
                         })}
                       >

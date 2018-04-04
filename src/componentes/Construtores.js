@@ -4,8 +4,6 @@ import Globals from './../Globals'
 
 import Button from './Button'
 import Text from './Text'
-import speaker_julian from '../imgs/speaker_julian.png'
-import speaker_rfabeni from '../imgs/speaker_rfabeni.png'
 import construtores_keit from '../imgs/construtores_keit.png'
 import construtores_deivid from '../imgs/construtores_deivid.png'
 import construtores_marco from '../imgs/construtores_marco.png'
@@ -150,26 +148,26 @@ const content = {
   role: 'link',
   sponsors: [
     {
-      twitter: ['twitter', 'rfabeni'],
-      github: ['github','rfabeni'],
+      twitter: ['twitter', 'deividmarques'],
+      github: ['github','deividmarques'],
       name: 'deivid marques',
       src: construtores_deivid
     },
     {
-      twitter: ['twitter', 'rfabeni'],
-      github: ['github','rfabeni'],
+      twitter: ['twitter', 'seescrevekeit'],
+      github: ['github','keitoliveira'],
       name: 'keit oliveira',
       src: construtores_keit
     },
     {
-      twitter: ['twitter', 'rfabeni'],
-      github: ['github','rfabeni'],
+      twitter: ['twitter', 'marcobrunobr'],
+      github: ['github','marcobrunobr'],
       name: 'marco bruno',
       src: construtores_marco
     },
     {
-      twitter: ['twitter', 'rfabeni'],
-      github: ['github','rfabeni'],
+      twitter: ['twitter', 'dnvtrn'],
+      github: ['github','danvitoriano'],
       name: 'dan vitoriano',
       src: construtores_dan
     }
