@@ -21,13 +21,11 @@ const styles ={
     borderRadius: 20,
     padding: '10px 20px',
     position: 'relative',
-    backgroundImage: `linear-gradient(to bottom, ${Globals.colors.purple} 50%, ${Globals.colors.red} 50%)`,
-    "backgroundPosition": "100% 100%",
-    backgroundSize: "210%",
-  	transition: 'background 250ms ease-in, color 150ms ease-in-out, border 100ms ease-in-out',
+    background: Globals.colors.red,
+  	transition: '250ms',
     '&:hover': {
 	    "color": Globals.colors.white,
-	    "backgroundPosition": "100% 0"
+	    background: Globals.colors.purple,
   	}
 	}),
 	outline: css({
@@ -44,15 +42,13 @@ const styles ={
     padding: '10px 20px',
     position: 'relative',
     border: '2px solid ' + Globals.colors.white,
-    backgroundImage: `linear-gradient(to bottom, transparent 50%, ${Globals.colors.red} 50%)`,
-    backgroundPosition: "0% 0%",
-    backgroundSize: "250%",
-  	transition: 'background 250ms ease-in, color 150ms ease-in-out, border 100ms ease-in-out',
+    background: 'transparent',
+  	transition: '250ms',
     '&:hover': {
 	    "color": Globals.colors.white,
-	    "backgroundPosition": "100% 100%",
+	    background: Globals.colors.red,
 	    border: '2px solid ' + Globals.colors.red
-  	}
+  		}
 	}),
 	twitter: css({
 		display: 'inline-block',
