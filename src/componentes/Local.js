@@ -37,6 +37,33 @@ const styles = {
   wrapperButton: css({
     paddingTop: 30
   }),
+  card: css({
+    width: 280,
+    maxWidth: '100%',
+    maxHeight: 190,
+    padding: '0',
+    borderRadius: 0,
+    margin: '10px 10px 4em',
+    '@media(min-width:1024px)':{
+      margin: '10px 10px',
+      width: 318,
+      maxHeight: 200
+    },
+    '> a': {
+      textIndent: '-9999px',
+      overflow: 'hidden',
+      textDecoration: 'none',
+    },
+  }),
+  cards: css({
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    justifyContent: 'space-around',
+    width: '100%',
+    margin: '0 auto',
+    maxWidth: 1023,
+  }),
   main: css({
     "position": "relative",
     "top": "30%",
@@ -118,15 +145,25 @@ export default class Local extends Component {
           <div {...styles.container}>
             <Text type={content.title.type} label={content.title.header} align={content.title.align} width={content.title.width} margin={content.title.margin} color={content.title.color} />
             <Text type={'normal'} label={content.title.description} align={content.title.align}/>
-            <ul {...styles.main}>
-              {content.photos.map((photo,index) => {
-                return(
-                  <li key={index}>
-                    <img src={photo.src} alt="maksoud plaza" {...styles.src}/>
-                  </li>
-                )
-              })}
-            </ul>
+            <div {...styles.cards}>
+                {content.photos.map((photo,index) => {
+                  return (
+                    <div key={index} {...styles.card}>
+                      <div
+                        {...css({
+                          backgroundImage: `url('${photo.src}')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          height: 190,
+                          display: 'block'
+                        })}
+                      >
+                      </div>
+                      
+                    </div>
+                  );
+                })}
+              </div>
             <div {...styles.wrapperButton}>
               <Button tabIndex="7" type={'submit'} label="Ver no Mapa" link="https://goo.gl/maps/yF3bHmXUBav" target={'_blank'}/>
             </div>

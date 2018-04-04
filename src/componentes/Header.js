@@ -10,7 +10,11 @@ const styles = {
   hero:css({
     "background": `url(${hero}) no-repeat`,
     "backgroundSize": "cover",
-    "width": "100%"
+    "width": "100%",
+    backgroundPosition: '40% 75%',
+    '@media(min-width: 768px)':{
+      backgroundPosition: 'center'
+    }
   }),
   container:css({
     width: '90%',

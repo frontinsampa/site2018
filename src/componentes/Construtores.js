@@ -31,6 +31,31 @@ const styles = {
       "height": "600px"
     }
   }),
+  card: css({
+    width: 241,
+    maxWidth: '100%',
+    maxHeight: 250,
+    padding: '0',
+    borderRadius: 0,
+    margin: '10px 10px 4em',
+    '@media(min-width: 720px)': {
+      margin: 0,
+    },
+    '> a': {
+      textIndent: '-9999px',
+      overflow: 'hidden',
+      textDecoration: 'none',
+    },
+  }),
+  cards: css({
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    justifyContent: 'space-around',
+    width: '100%',
+    margin: '0 auto',
+    maxWidth: 1023,
+  }),
   main: css({
     "position": "relative",
     "top": "45%",
@@ -101,6 +126,8 @@ const styles = {
   }),
   infos: css({
     position: 'absolute',
+    transition: '210ms ease-in',
+    marginBottom: -100,
     width: '100%',
     display: 'block',
     background: "linear-gradient(to bottom, transparent, rgba(0,0,0,1))",
@@ -123,26 +150,26 @@ const content = {
   role: 'link',
   sponsors: [
     {
-      twitter: ['twitter', 'deividmarques'],
-      github: ['github','deividmarques'],
+      twitter: ['twitter', 'rfabeni'],
+      github: ['github','rfabeni'],
       name: 'deivid marques',
       src: construtores_deivid
     },
     {
-      twitter: ['twitter', 'seescrevekeit'],
-      github: ['github','keitoliveira'],
+      twitter: ['twitter', 'rfabeni'],
+      github: ['github','rfabeni'],
       name: 'keit oliveira',
       src: construtores_keit
     },
     {
-      twitter: ['twitter', 'marcobrunobr'],
-      github: ['github','marcobrunobr'],
+      twitter: ['twitter', 'rfabeni'],
+      github: ['github','rfabeni'],
       name: 'marco bruno',
       src: construtores_marco
     },
     {
-      twitter: ['twitter', 'dnvtrn'],
-      github: ['github','danvitoriano'],
+      twitter: ['twitter', 'rfabeni'],
+      github: ['github','rfabeni'],
       name: 'dan vitoriano',
       src: construtores_dan
     }
@@ -157,15 +184,36 @@ export default class Construtores extends Component {
           <div {...styles.container}>
             <Text type={content.title.type} label={content.title.header} align={content.title.align} width={content.title.width} margin={content.title.margin} color={content.title.color} />
             <Text type={'normal'} label={content.title.description} align={content.title.align}/>
-              <ul {...styles.main}>
+              <ul {...styles.cards}>
                 {content.sponsors.map((photo,index) => {
                   return(
-                    <li key={index}>
-                      <div {...style({ backgroundImage: `url(${photo.src})`})} {...styles.photo}>
+                    <li key={index} {...styles.card}>
+                      <div {...style({ 
+                        backgroundImage: `url(${photo.src})`,
+                        backgroundSize: 'contain',
+                        WebkitFilter: 'grayscale(100%)',
+                        filter: 'grayscale(100%)',
+                        display: 'block',
+                        margin: '0 auto',
+                        backgroundPosition: 'center',
+                        height: 250,
+                        backgroundRepeat: 'no-repeat',
+                        position: 'relative',
+                        overflow: 'hidden',
+                        '&:hover':{
+                          WebkitFilter: 'grayscale(0%)',
+                          filter: 'grayscale(0%)',
+                          transition: '210ms',
+                          cursor: 'pointer',
+                          '> div':{
+                            marginBottom: 0
+                          }
+                        }
+                    })}>
                         <div {...styles.infos}>
                           <Text type={'h6'} label={photo.name}/>
-                          <Button tabIndex='11' type={photo.twitter[0]} link={photo.twitter[1]}/>
-                          <Button tabIndex='11' type={photo.github[0]} link={photo.github[1]}/>
+                          <Button type={photo.twitter[0]} link={photo.twitter[1]}/>
+                          <Button type={photo.github[0]} link={photo.github[1]}/>
                         </div>
                       </div>
                     </li>

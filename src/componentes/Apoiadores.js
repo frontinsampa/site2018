@@ -31,6 +31,32 @@ const styles = {
       "height": "500px"
     }
   }),
+  card: css({
+    width: 110,
+    maxWidth: '100%',
+    maxHeight: 110,
+    padding: '0',
+    backgroundColor: Globals.colors.white,
+    borderRadius: 0,
+    margin: '10px 10px 4em',
+    '@media(min-width: 720px)': {
+      margin: '10px 10px 1em',
+    },
+    '> a': {
+      textIndent: '-9999px',
+      overflow: 'hidden',
+      textDecoration: 'none',
+    },
+  }),
+  cards: css({
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    justifyContent: 'space-around',
+    width: '100%',
+    margin: '0 auto',
+    maxWidth: 1023,
+  }),
   main: css({
     "position": "relative",
     "top": "35%",
@@ -126,17 +152,31 @@ export default class Apoiadores extends Component {
           <div {...styles.container}>
             <Text type={content.title.type} label={content.title.header} align={content.title.align} width={content.title.width} margin={content.title.margin} color={content.title.color} />
             <Text type={'normal'} label={content.title.description} align={content.title.align}/>
-              <ul {...styles.main}>
+              <div {...styles.cards}>
                 {content.sponsors.map((photo,index) => {
-                  return(
-                    <li key={index}>
-                      <a tabIndex='10' href={photo.link} target="_blank" >
-                        <img src={photo.src} alt={photo.alt} title={photo.alt} {...styles.src}/>
+                  return (
+                    <div key={index} {...styles.card}>
+                      <a
+                        href={photo.link}
+                        tabIndex='10'
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className="notranslate"
+                        {...css({
+                          backgroundImage: `url('${photo.src}')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          height: 110,
+                          display: 'block'
+                        })}
+                      >
+                        {photo.alt}
                       </a>
-                    </li>
-                  )
+                      
+                    </div>
+                  );
                 })}
-              </ul>
+              </div>
           </div>
         </div>
         )
