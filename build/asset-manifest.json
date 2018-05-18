@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.76a870bd.css",
   "main.css.map": "static/css/main.76a870bd.css.map",
-  "main.js": "static/js/main.e9c6c283.js",
-  "main.js.map": "static/js/main.e9c6c283.js.map",
+  "main.js": "static/js/main.e103bf61.js",
+  "main.js.map": "static/js/main.e103bf61.js.map",
   "static/media/Roboto-Light.ttf": "static/media/Roboto-Light.fc84e998.ttf",
   "static/media/Roboto-Medium.ttf": "static/media/Roboto-Medium.d0884059.ttf",
   "static/media/RobotoMono-Light.ttf": "static/media/RobotoMono-Light.b82d827b.ttf",
@@ -10,14 +10,13 @@
   "static/media/apresentador.png": "static/media/apresentador.a52a3d94.png",
   "static/media/background-dots.png": "static/media/background-dots.3cf32ff3.png",
   "static/media/construtores_dan.png": "static/media/construtores_dan.0c8b9e74.png",
-  "static/media/construtores_deivid.png": "static/media/construtores_deivid.fb99bdb9.png",
   "static/media/construtores_keit.png": "static/media/construtores_keit.6a9b6317.png",
-  "static/media/construtores_marco.png": "static/media/construtores_marco.ebf342ab.png",
   "static/media/hero.jpg": "static/media/hero.d9dd097a.jpg",
   "static/media/maksoud1.png": "static/media/maksoud1.96064706.png",
   "static/media/maksoud2.png": "static/media/maksoud2.1b285933.png",
   "static/media/maksoud3.png": "static/media/maksoud3.2ffa82b0.png",
   "static/media/maksoud4.png": "static/media/maksoud4.d24fbd58.png",
   "static/media/maksoud5.png": "static/media/maksoud5.73abb969.png",
-  "static/media/maksoud6.png": "static/media/maksoud6.4c96374c.png"
+  "static/media/maksoud6.png": "static/media/maksoud6.4c96374c.png",
+  "static/media/speaker_rfabeni.jpg": "static/media/speaker_rfabeni.9d14417e.jpg"
 }
