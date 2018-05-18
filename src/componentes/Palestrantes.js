@@ -4,12 +4,14 @@ import Globals from './../Globals'
 
 import Button from './Button'
 import Text from './Text'
-import speaker_julian from '../imgs/speaker_julian.png'
-import speaker_rfabeni from '../imgs/speaker_rfabeni.png'
-import speaker_1 from '../imgs/speaker_1.png'
-import speaker_2 from '../imgs/speaker_2.png'
-import speaker_3 from '../imgs/speaker_3.png'
-import speaker_4 from '../imgs/speaker_4.png'
+import speaker_rfabeni from '../imgs/speaker_rfabeni.jpg'
+// import speaker_rfabeni from '../imgs/speaker_rfabeni.png'
+import speaker_man from '../imgs/speaker_man.jpg'
+import speaker_woman from '../imgs/speaker_woman.jpg'
+// import speaker_1 from '../imgs/speaker_1.png'
+// import speaker_2 from '../imgs/speaker_2.png'
+// import speaker_3 from '../imgs/speaker_3.png'
+// import speaker_4 from '../imgs/speaker_4.png'
 
 const styles = {
   hero:css({
@@ -42,7 +44,7 @@ const styles = {
     maxWidth: '100%',
     display: 'flex',
     justifyContent: 'space-between', 
-    flexFlow: 'column wrap', 
+    flexFlow: 'column', 
     alignItems: 'center',
     alignContent: 'flex-start',
     '@media(min-width: 1024px)':{
@@ -91,47 +93,69 @@ const content = {
   },
   role: 'link',
   speakers: [{
-    name: 'Julian Kloiber',
-    talk: 'Code for Germany',
-    twitter: ['twitter', 'julian'],
-    github: ['github','julian'],
-    photo: speaker_julian
-  },
-  {
     name: 'Raphael Fabeni',
-    talk: 'CSS Tips',
-    twitter: ['twitter', 'rfabeni'],
-    github: ['github','rfabeni'],
+    talk: 'Cultura de Desenvolvimento - A saga continua',
+    twitter: ['twitter', 'raphaelfabeni'],
+    github: ['github','raphaelfabeni'],
     photo: speaker_rfabeni
   },
   {
-    name: 'Raphael Fabeni',
-    talk: 'CSS Tips',
-    twitter: ['twitter', 'rfabeni'],
-    github: ['github','rfabeni'],
-    photo: speaker_1
+    talk: 'Em breve',
+    photo: speaker_woman
   },
   {
-    name: 'Raphael Fabeni',
-    talk: 'CSS Tips',
-    twitter: ['twitter', 'rfabeni'],
-    github: ['github','rfabeni'],
-    photo: speaker_2
+    talk: 'Em breve',
+    photo: speaker_woman
   },
   {
-    name: 'Raphael Fabeni',
-    talk: 'CSS Tips',
-    twitter: ['twitter', 'rfabeni'],
-    github: ['github','rfabeni'],
-    photo: speaker_3
+    talk: 'Em breve',
+    photo: speaker_man
   },
   {
-    name: 'Raphael Fabeni',
-    talk: 'CSS Tips',
-    twitter: ['twitter', 'rfabeni'],
-    github: ['github','rfabeni'],
-    photo: speaker_4
-  }]
+    talk: 'Em breve',
+    photo: speaker_man
+  },
+  {
+    talk: 'Em breve',
+    photo: speaker_woman
+  }
+
+  // {
+  //   name: 'Raphael Fabeni',
+  //   talk: 'CSS Tips',
+  //   twitter: ['twitter', 'rfabeni'],
+  //   github: ['github','rfabeni'],
+  //   photo: speaker_rfabeni
+  // },
+  // {
+  //   name: 'Raphael Fabeni',
+  //   talk: 'CSS Tips',
+  //   twitter: ['twitter', 'rfabeni'],
+  //   github: ['github','rfabeni'],
+  //   photo: speaker_1
+  // },
+  // {
+  //   name: 'Raphael Fabeni',
+  //   talk: 'CSS Tips',
+  //   twitter: ['twitter', 'rfabeni'],
+  //   github: ['github','rfabeni'],
+  //   photo: speaker_2
+  // },
+  // {
+  //   name: 'Raphael Fabeni',
+  //   talk: 'CSS Tips',
+  //   twitter: ['twitter', 'rfabeni'],
+  //   github: ['github','rfabeni'],
+  //   photo: speaker_3
+  // },
+  // {
+  //   name: 'Raphael Fabeni',
+  //   talk: 'CSS Tips',
+  //   twitter: ['twitter', 'rfabeni'],
+  //   github: ['github','rfabeni'],
+  //   photo: speaker_4
+  // }
+  ]
 }
 
 export default class Palestrantes extends Component {
@@ -147,10 +171,26 @@ export default class Palestrantes extends Component {
                     <li key={index}>
                       <div {...style({ backgroundImage: `url(${speaker.photo})`})} {...styles.photo}>
                         <div {...styles.infos}>
-                          <Text type={'h6'} label={speaker.name}/>
-                          <Text type={'normal'} label={speaker.talk}/>
-                          <Button type={speaker.twitter[0]} link={speaker.twitter[1]}/>
-                          <Button type={speaker.github[0]} link={speaker.github[1]}/>
+                          {
+                            speaker.name
+                              ? <Text type={'h6'} label={speaker.name}/>
+                              : null
+                          }
+                          {
+                            speaker.talk
+                              ? <Text type={'normal'} label={speaker.talk}/>
+                              : null
+                          }
+                          {
+                            speaker.twitter
+                              ? <Button type={speaker.twitter[0]} link={speaker.twitter[1]}/>
+                              : null
+                          }
+                          {
+                            speaker.github
+                              ? <Button type={speaker.github[0]} link={speaker.github[1]}/>
+                              : null
+                          }
                         </div>
                       </div>
                     </li>

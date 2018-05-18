@@ -8,6 +8,7 @@ import Apresentador from './componentes/Apresentador'
 import Local from './componentes/Local'
 import CallForPapers from './componentes/CallForPapers'
 import Patrocinadores from './componentes/Patrocinadores'
+import Palestrantes from './componentes/Palestrantes'
 import Apoiadores from './componentes/Apoiadores'
 import Construtores from './componentes/Construtores'
 import Contato from './componentes/Contato'
@@ -41,7 +42,7 @@ class App extends Component {
       <div {...styles.main}>
         <Header/>
         <Evento/>
-        {/*<Palestrantes/>*/}
+        <Palestrantes/>
         <Apresentador/>
         <Local/>
         <CallForPapers/>
