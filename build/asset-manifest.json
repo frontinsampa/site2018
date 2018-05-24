@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.76a870bd.css",
   "main.css.map": "static/css/main.76a870bd.css.map",
-  "main.js": "static/js/main.e103bf61.js",
-  "main.js.map": "static/js/main.e103bf61.js.map",
+  "main.js": "static/js/main.69505c3d.js",
+  "main.js.map": "static/js/main.69505c3d.js.map",
   "static/media/Roboto-Light.ttf": "static/media/Roboto-Light.fc84e998.ttf",
   "static/media/Roboto-Medium.ttf": "static/media/Roboto-Medium.d0884059.ttf",
   "static/media/RobotoMono-Light.ttf": "static/media/RobotoMono-Light.b82d827b.ttf",
@@ -18,5 +18,6 @@
   "static/media/maksoud4.png": "static/media/maksoud4.d24fbd58.png",
   "static/media/maksoud5.png": "static/media/maksoud5.73abb969.png",
   "static/media/maksoud6.png": "static/media/maksoud6.4c96374c.png",
+  "static/media/speaker_febernardo.jpg": "static/media/speaker_febernardo.b6ddda06.jpg",
   "static/media/speaker_rfabeni.jpg": "static/media/speaker_rfabeni.9d14417e.jpg"
 }
