@@ -7,6 +7,7 @@ import locaweb from '../imgs/locaweb.png'
 import neon from '../imgs/neon.png'
 import contaazul from '../imgs/contaazul.png'
 import iq360 from '../imgs/iq360.png'
+import cubo from '../imgs/cubo.png'
 
 const styles = {
   hero:css({
@@ -32,9 +33,9 @@ const styles = {
     width: 241,
     maxWidth: '100%',
     maxHeight: 130,
-    padding: '0',
+    padding: 20,
     borderRadius: 0,
-    margin: '10px 10px 4em',
+    margin: '0',
     '@media(min-width: 720px)': {
       margin: 0,
     },
@@ -134,6 +135,11 @@ const content = {
       link: 'https://www.iq360.com.br/',
       alt: 'IQ 360',
       src: iq360
+    },
+    {
+      link: 'https://cubo.network',
+      alt: 'Cubo',
+      src: cubo
     }
   ]
 }

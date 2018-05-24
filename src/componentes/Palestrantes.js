@@ -5,7 +5,7 @@ import Globals from './../Globals'
 import Button from './Button'
 import Text from './Text'
 import speaker_rfabeni from '../imgs/speaker_rfabeni.jpg'
-// import speaker_rfabeni from '../imgs/speaker_rfabeni.png'
+import speaker_febernardo from '../imgs/speaker_febernardo.jpg'
 import speaker_man from '../imgs/speaker_man.jpg'
 import speaker_woman from '../imgs/speaker_woman.jpg'
 // import speaker_1 from '../imgs/speaker_1.png'
@@ -100,8 +100,11 @@ const content = {
     photo: speaker_rfabeni
   },
   {
-    talk: 'Em breve',
-    photo: speaker_woman
+    name: 'Fernanda Bernardo',
+    talk: 'Divulgação em breve',
+    twitter: ['twitter', 'Feh_Bernardo'],
+    github: ['github','FernandaBernardo'],
+    photo: speaker_febernardo
   },
   {
     talk: 'Em breve',
