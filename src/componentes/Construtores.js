@@ -15,7 +15,7 @@ const styles = {
   }),
   container:css({
     width: '90%',
-    "height": "1300px",
+    "height": "800px",
     paddingTop: 60,
     margin: '0 auto',
     '@media(min-width: 768px)':{
@@ -26,7 +26,7 @@ const styles = {
     '@media(min-width: 1024px)':{
       paddingTop: 103,
       maxWidth: 1024,
-      "height": "600px"
+      "height": "100vh"
     }
   }),
   card: css({

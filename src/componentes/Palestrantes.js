@@ -20,7 +20,7 @@ const styles = {
   }),
   container:css({
     width: '90%',
-    "height": "2000px",
+    "height": "2500px",
     paddingTop: 60,
     margin: '0 auto',
     '@media(min-width: 768px)':{
