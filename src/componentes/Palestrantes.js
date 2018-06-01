@@ -6,6 +6,7 @@ import Button from './Button'
 import Text from './Text'
 import speaker_rfabeni from '../imgs/speaker_rfabeni.jpg'
 import speaker_febernardo from '../imgs/speaker_febernardo.jpg'
+import speaker_daciuk from '../imgs/speaker_daciuk.jpg'
 import speaker_man from '../imgs/speaker_man.jpg'
 import speaker_woman from '../imgs/speaker_woman.jpg'
 // import speaker_1 from '../imgs/speaker_1.png'
@@ -30,7 +31,7 @@ const styles = {
     '@media(min-width: 1024px)':{
       paddingTop: 103,
       maxWidth: 1024,
-      "height": "1370px"
+      "height": "1770px"
     }
   }),
   main: css({
@@ -101,10 +102,21 @@ const content = {
   },
   {
     name: 'Fernanda Bernardo',
-    talk: 'Divulgação em breve',
+    talk: 'Perceived Performance',
     twitter: ['twitter', 'Feh_Bernardo'],
     github: ['github','FernandaBernardo'],
     photo: speaker_febernardo
+  },
+  {
+    name: 'Fernando Daciuk',
+    talk: 'Immutable JavaScript',
+    twitter: ['twitter', 'fdaciuk'],
+    github: ['github','fdaciuk'],
+    photo: speaker_daciuk
+  },
+  {
+    talk: 'Em breve',
+    photo: speaker_woman
   },
   {
     talk: 'Em breve',
@@ -122,6 +134,7 @@ const content = {
     talk: 'Em breve',
     photo: speaker_woman
   }
+  
 
   // {
   //   name: 'Raphael Fabeni',
