@@ -127,11 +127,6 @@ const content = {
       src: neon
     },
     {
-      link: 'https://contaazul.com/',
-      alt: 'Conta Azul',
-      src: contaazul
-    },
-    {
       link: 'https://www.iq360.com.br/',
       alt: 'IQ 360',
       src: iq360
@@ -140,7 +135,13 @@ const content = {
       link: 'https://cubo.network',
       alt: 'Cubo',
       src: cubo
+    },
+    {
+      link: 'https://contaazul.com/',
+      alt: 'Conta Azul',
+      src: contaazul
     }
+    
   ]
 }
 

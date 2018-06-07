@@ -7,6 +7,8 @@ import Text from './Text'
 import speaker_rfabeni from '../imgs/speaker_rfabeni.jpg'
 import speaker_febernardo from '../imgs/speaker_febernardo.jpg'
 import speaker_daciuk from '../imgs/speaker_daciuk.jpg'
+import speaker_alda from '../imgs/speaker_alda.jpg'
+import speaker_matheuslima from '../imgs/speaker_matheuslima.jpg'
 import speaker_man from '../imgs/speaker_man.jpg'
 import speaker_woman from '../imgs/speaker_woman.jpg'
 // import speaker_1 from '../imgs/speaker_1.png'
@@ -115,12 +117,18 @@ const content = {
     photo: speaker_daciuk
   },
   {
-    talk: 'Em breve',
-    photo: speaker_woman
+    name: 'Alda Rocha',
+    talk: 'UXD: A manopla do infinito design',
+    twitter: ['twitter', 'mjcoffeeholick'],
+    github: ['github','mjcoffeeholick'],
+    photo: speaker_alda
   },
   {
-    talk: 'Em breve',
-    photo: speaker_woman
+    name: 'Matheus Lima',
+    talk: 'JavaScript e Blockchain',
+    twitter: ['twitter', 'matheusml'],
+    github: ['github','matheusml'],
+    photo: speaker_matheuslima
   },
   {
     talk: 'Em breve',

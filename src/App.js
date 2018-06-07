@@ -6,7 +6,6 @@ import Header from './componentes/Header'
 import Evento from './componentes/Evento'
 import Apresentador from './componentes/Apresentador'
 import Local from './componentes/Local'
-import CallForPapers from './componentes/CallForPapers'
 import Patrocinadores from './componentes/Patrocinadores'
 import Palestrantes from './componentes/Palestrantes'
 import Apoiadores from './componentes/Apoiadores'
@@ -45,7 +44,6 @@ class App extends Component {
         <Palestrantes/>
         <Apresentador/>
         <Local/>
-        <CallForPapers/>
         <Patrocinadores/>
         <Apoiadores/>
         <Construtores/>

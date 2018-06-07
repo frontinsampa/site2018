@@ -31,7 +31,7 @@ const styles = {
 const navItens = [
 	{section: 'o evento', link: '#evento'},
 	// {section: 'palestrantes', link:'#palestrantes'},
-	{section: 'apresentador', link:'#apresentador'},
+	{section: 'palestrantes', link:'#palestrantes'},
 	{section: 'patrocinadores', link:'#patrocinadores'},
 	// {section: 'programação', link:'#programacao'},
 	{section: 'local', link:'#local'},
