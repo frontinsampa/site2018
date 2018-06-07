@@ -60,8 +60,8 @@ export default class Text extends Component{
 				)
 			case 'h6':
 				return(
-					<h6 {...styles.h6} >{this.props.label}
-					</h6>	
+					<p {...styles.h6} >{this.props.label}
+					</p>	
 				)
 			case 'normal':
 				return(
