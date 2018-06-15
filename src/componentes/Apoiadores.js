@@ -8,6 +8,7 @@ import dne from '../imgs/apoio-dne.png'
 import frontincampinas from '../imgs/apoio-frontincampinas.png'
 import reactconfbr from '../imgs/apoio-reactconfbr.png'
 import codamos from '../imgs/apoio-codamos.png'
+import trainingcenter from '../imgs/apoio-trainingcenter.jpg'
 
 
 const styles = {
@@ -139,6 +140,11 @@ const content = {
       link: 'http://www.codamos.club/',
       alt: 'codamos',
       src: codamos
+    },
+    {
+      link: 'http://www.trainingcenter.io/',
+      alt: 'trainingcenter',
+      src: trainingcenter
     }
   ]
 }

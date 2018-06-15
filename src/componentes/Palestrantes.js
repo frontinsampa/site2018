@@ -9,6 +9,7 @@ import speaker_febernardo from '../imgs/speaker_febernardo.jpg'
 import speaker_daciuk from '../imgs/speaker_daciuk.jpg'
 import speaker_alda from '../imgs/speaker_alda.jpg'
 import speaker_matheuslima from '../imgs/speaker_matheuslima.jpg'
+import speaker_lucas from '../imgs/speaker_lucas.jpg'
 import speaker_man from '../imgs/speaker_man.jpg'
 import speaker_woman from '../imgs/speaker_woman.jpg'
 // import speaker_1 from '../imgs/speaker_1.png'
@@ -97,7 +98,7 @@ const content = {
   role: 'link',
   speakers: [{
     name: 'Raphael Fabeni',
-    talk: 'Cultura de Desenvolvimento - A saga continua',
+    talk: 'Cultura de Desenvolvimento - Revisitada',
     twitter: ['twitter', 'raphaelfabeni'],
     github: ['github','raphaelfabeni'],
     photo: speaker_rfabeni
@@ -118,7 +119,7 @@ const content = {
   },
   {
     name: 'Alda Rocha',
-    talk: 'UXD: A manopla do infinito design',
+    talk: 'UXD: Manopla do infinito design',
     twitter: ['twitter', 'mjcoffeeholick'],
     github: ['github','mjcoffeeholick'],
     photo: speaker_alda
@@ -131,8 +132,11 @@ const content = {
     photo: speaker_matheuslima
   },
   {
-    talk: 'Em breve',
-    photo: speaker_man
+    name: 'Lucas Silva',
+    talk: 'Acessibilidade, CSS e UX',
+    twitter: ['twitter', 'lucas_dejsilva'],
+    github: ['github','lucasjs'],
+    photo: speaker_lucas
   },
   {
     talk: 'Em breve',
