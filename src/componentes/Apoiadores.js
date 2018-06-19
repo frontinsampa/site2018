@@ -9,6 +9,8 @@ import frontincampinas from '../imgs/apoio-frontincampinas.png'
 import reactconfbr from '../imgs/apoio-reactconfbr.png'
 import codamos from '../imgs/apoio-codamos.png'
 import trainingcenter from '../imgs/apoio-trainingcenter.jpg'
+import jsexperience from '../imgs/apoio-jsexperience.jpg'
+import tableless from '../imgs/apoio-tableless.jpg'
 
 
 const styles = {
@@ -145,6 +147,16 @@ const content = {
       link: 'http://www.trainingcenter.io/',
       alt: 'trainingcenter',
       src: trainingcenter
+    },
+    {
+      link: 'https://eventos.imasters.com.br/jsexperience',
+      alt: 'jsexperience',
+      src: jsexperience
+    },
+    {
+      link: 'http://www.tableless.com.br/',
+      alt: 'tableless',
+      src: tableless
     }
   ]
 }
