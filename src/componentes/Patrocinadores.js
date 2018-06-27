@@ -8,6 +8,9 @@ import neon from '../imgs/neon.png'
 import contaazul from '../imgs/contaazul.png'
 import iq360 from '../imgs/iq360.png'
 import cubo from '../imgs/cubo.png'
+import daitangroup from '../imgs/daitan.jpg'
+import vanhack from '../imgs/vanhack.jpg'
+import revelo from '../imgs/revelo.jpg'
 
 const styles = {
   hero:css({
@@ -15,7 +18,7 @@ const styles = {
   }),
   container:css({
     width: '90%',
-    "height": "900px",
+    "height": "1300px",
     paddingTop: 60,
     margin: '0 auto',
     '@media(min-width: 768px)':{
@@ -137,9 +140,24 @@ const content = {
       src: cubo
     },
     {
-      link: 'https://contaazul.com/',
-      alt: 'Conta Azul',
+      link: 'http://contazul.com.br/',
+      alt: 'ContaAzul',
       src: contaazul
+    },
+    {
+      link: 'http://daitangroup.com/',
+      alt: 'Daitan',
+      src: daitangroup
+    },
+    {
+      link: 'https://vanhack.com/',
+      alt: 'VanHack',
+      src: vanhack
+    },
+    {
+      link: 'https://revelo.com.br',
+      alt: 'Revelo',
+      src: revelo
     }
     
   ]

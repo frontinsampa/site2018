@@ -17,7 +17,7 @@ const styles = {
   }),
   container:css({
     width: '90%',
-    "height": "2000px",
+    "height": "2100px",
     paddingTop: 60,
     textAlign: 'center',
     margin: '0 auto',

@@ -82,7 +82,7 @@ const content = {
   img: apresentador,
   role: 'link',
   alt: 'Matheus Marsiglio',
-  description: 'Tão tradicional quanto o evento, Matheus Marsiglio será o apresentador mais uma vez. Ele é Software developer, co-criador do FrontUX, palestrante, e segundo sua próprias palavras, faz código parecer algo "cool" resolvendo problemas que você talvez nem saiba ter.',
+  description: 'Tão tradicional quanto o evento, Matheus Marsiglio será o apresentador mais uma vez. Ele é Software developer, co-criador do FrontUX, palestrante, e além de apresentar o evento, será mediador de um debate com pessoas incríveis da comunidade. Imperdível.',
   twitter: ['twitter', 'mtmr0x'],
   github: ['github','mtmr0x']
 }

@@ -23,13 +23,13 @@ const styles = {
   }),
   container:css({
     width: '90%',
-    "height": "2500px",
+    "height": "3000px",
     paddingTop: 60,
     margin: '0 auto',
     '@media(min-width: 768px)':{
       paddingTop: 60,
       maxWidth: 1024,
-      "height": "2330px"
+      "height": "3700px"
     },
     '@media(min-width: 1024px)':{
       paddingTop: 103,
@@ -59,9 +59,9 @@ const styles = {
     '> li':{
       flex: 1,
       maxWidth: 425,
-      padding: '20px 0',
+      padding: '60px 0',
       '@media(min-width:1024px)':{
-        padding: '35px 0'
+        padding: '50px 0'
       }
     }
   }),
@@ -82,6 +82,16 @@ const styles = {
     position: 'absolute',
     bottom: 30,
     left: 30
+  }),
+  description: css({
+    position: 'absolute',
+    color: 'white',
+    top: 215,
+    left: 0,
+    fontSize: 14,
+    '@media(min-width:768px)':{
+      top: 300,
+    }
   })
 }
 
@@ -101,42 +111,48 @@ const content = {
     talk: 'Cultura de Desenvolvimento - Revisitada',
     twitter: ['twitter', 'raphaelfabeni'],
     github: ['github','raphaelfabeni'],
-    photo: speaker_rfabeni
+    photo: speaker_rfabeni,
+    description: 'Após 3 anos da primeira apresentação sobre Cultura de Desenvolvimento, Fabeni revisita seu tema e apresenta uma pesquisa inédita feita pela internet: a cultura de desenvolvimento nos times de tecnologia - evoluímos ou regredimos?'
   },
   {
     name: 'Fernanda Bernardo',
     talk: 'Perceived Performance',
     twitter: ['twitter', 'Feh_Bernardo'],
     github: ['github','FernandaBernardo'],
-    photo: speaker_febernardo
+    photo: speaker_febernardo,
+    description: 'Perceived Performance é um termo da engenharia da computação que se refere a quão rápida uma funcionalidade de software aparenta performar sua tarefa. A Fernanda Bernardo apresentará conceitos e explicará mais sobre a importância da performance no desenvolvimento web.'
   },
   {
     name: 'Fernando Daciuk',
     talk: 'Immutable JavaScript',
     twitter: ['twitter', 'fdaciuk'],
     github: ['github','fdaciuk'],
-    photo: speaker_daciuk
+    photo: speaker_daciuk,
+    description: 'Imutabilidade em JavaScript é um dos temas mais comentados ao usar tecnologias como React, Redux e GraphQL. O professor Fernando Daciuk promete explicar o conceito por trás da imutabilidade e demonstrar onde podemos usufruir desta abordagem.'
   },
   {
     name: 'Alda Rocha',
     talk: 'UXD: Manopla do infinito design',
     twitter: ['twitter', 'mjcoffeeholick'],
     github: ['github','mjcoffeeholick'],
-    photo: speaker_alda
+    photo: speaker_alda,
+    description: 'Ao longo dos anos, UXD mostrou-se mais complexo que muitos pintavam e tão poderoso quanto a manopla do infinito! Vamos entender quais são os seus pilares e como cada um pode trabalhar individualmente para ter um bom produto.'
   },
   {
     name: 'Matheus Lima',
     talk: 'JavaScript e Blockchain',
     twitter: ['twitter', 'matheusml'],
     github: ['github','matheusml'],
-    photo: speaker_matheuslima
+    photo: speaker_matheuslima,
+    description: 'A próxima disrupção tecnológica, tão grande quanto a própria internet, será o Blockchain. Poucos ainda sabem o que ela é, quais mercados ela vai revolucionar e principalmente: como combinar o Blockchain com JavaScript e construir aplicações incríveis.'
   },
   {
     name: 'Lucas Silva',
     talk: 'Acessibilidade, CSS e UX',
     twitter: ['twitter', 'lucas_dejsilva'],
     github: ['github','lucasjs'],
-    photo: speaker_lucas
+    photo: speaker_lucas,
+    description: 'Muitas pessoas estudam CSS há anos e cometem diversos erros. Nesta palestra, vamos encarar vários vícios e aprender dicas para fazer do CSS acessível e proporcionando boa experiência aos usuários.'
   },
   {
     talk: 'Em breve',
@@ -219,6 +235,9 @@ export default class Palestrantes extends Component {
                               ? <Button type={speaker.github[0]} link={speaker.github[1]}/>
                               : null
                           }
+                        </div>
+                        <div {...styles.description}>
+                          {speaker.description}
                         </div>
                       </div>
                     </li>
