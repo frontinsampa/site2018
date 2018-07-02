@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.76a870bd.css",
   "main.css.map": "static/css/main.76a870bd.css.map",
-  "main.js": "static/js/main.0b2ea509.js",
-  "main.js.map": "static/js/main.0b2ea509.js.map",
+  "main.js": "static/js/main.898b8609.js",
+  "main.js.map": "static/js/main.898b8609.js.map",
   "static/media/Roboto-Light.ttf": "static/media/Roboto-Light.fc84e998.ttf",
   "static/media/Roboto-Medium.ttf": "static/media/Roboto-Medium.d0884059.ttf",
   "static/media/RobotoMono-Light.ttf": "static/media/RobotoMono-Light.b82d827b.ttf",
@@ -22,7 +22,13 @@
   "static/media/speaker_alda.jpg": "static/media/speaker_alda.4a808bc9.jpg",
   "static/media/speaker_daciuk.jpg": "static/media/speaker_daciuk.8f586f26.jpg",
   "static/media/speaker_febernardo.jpg": "static/media/speaker_febernardo.b6ddda06.jpg",
+  "static/media/speaker_grasel.jpg": "static/media/speaker_grasel.02983031.jpg",
+  "static/media/speaker_isa.jpg": "static/media/speaker_isa.1d9f624e.jpg",
+  "static/media/speaker_julio.jpg": "static/media/speaker_julio.0dd726e3.jpg",
+  "static/media/speaker_kete.jpg": "static/media/speaker_kete.76776406.jpg",
   "static/media/speaker_lucas.jpg": "static/media/speaker_lucas.eba5a977.jpg",
   "static/media/speaker_matheuslima.jpg": "static/media/speaker_matheuslima.0cd97a68.jpg",
-  "static/media/speaker_rfabeni.jpg": "static/media/speaker_rfabeni.9d14417e.jpg"
+  "static/media/speaker_pokemon.jpg": "static/media/speaker_pokemon.e36cb4f0.jpg",
+  "static/media/speaker_rfabeni.jpg": "static/media/speaker_rfabeni.9d14417e.jpg",
+  "static/media/speaker_rod.jpg": "static/media/speaker_rod.d6307d7b.jpg"
 }

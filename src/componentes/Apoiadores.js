@@ -11,6 +11,7 @@ import codamos from '../imgs/apoio-codamos.png'
 import trainingcenter from '../imgs/apoio-trainingcenter.jpg'
 import jsexperience from '../imgs/apoio-jsexperience.jpg'
 import tableless from '../imgs/apoio-tableless.jpg'
+import h4p from '../imgs/apoio-h4p.jpg'
 
 
 const styles = {
@@ -53,11 +54,11 @@ const styles = {
   cards: css({
     display: 'flex',
     flexWrap: 'wrap',
-    alignItems: 'flex-start',
-    justifyContent: 'space-around',
+    alignItems: 'center',
+    justifyContent: 'center',
     width: '100%',
     margin: '0 auto',
-    maxWidth: 1023,
+    maxWidth: 768,
   }),
   main: css({
     "position": "relative",
@@ -157,6 +158,11 @@ const content = {
       link: 'http://www.tableless.com.br/',
       alt: 'tableless',
       src: tableless
+    },
+    {
+      link: 'http://help4papers.com.br/',
+      alt: 'help4papers',
+      src: h4p
     }
   ]
 }

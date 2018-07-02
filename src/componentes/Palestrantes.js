@@ -10,8 +10,12 @@ import speaker_daciuk from '../imgs/speaker_daciuk.jpg'
 import speaker_alda from '../imgs/speaker_alda.jpg'
 import speaker_matheuslima from '../imgs/speaker_matheuslima.jpg'
 import speaker_lucas from '../imgs/speaker_lucas.jpg'
-import speaker_man from '../imgs/speaker_man.jpg'
-import speaker_woman from '../imgs/speaker_woman.jpg'
+import speaker_kete from '../imgs/speaker_kete.jpg'
+import speaker_rod from '../imgs/speaker_rod.jpg'
+import speaker_julio from '../imgs/speaker_julio.jpg'
+import speaker_isa from '../imgs/speaker_isa.jpg'
+import speaker_grasel from '../imgs/speaker_grasel.jpg'
+import speaker_pokemon from '../imgs/speaker_pokemon.jpg'
 // import speaker_1 from '../imgs/speaker_1.png'
 // import speaker_2 from '../imgs/speaker_2.png'
 // import speaker_3 from '../imgs/speaker_3.png'
@@ -23,18 +27,18 @@ const styles = {
   }),
   container:css({
     width: '90%',
-    "height": "3000px",
+    "height": "4800px",
     paddingTop: 60,
     margin: '0 auto',
     '@media(min-width: 768px)':{
       paddingTop: 60,
       maxWidth: 1024,
-      "height": "3700px"
+      "height": "5500px"
     },
     '@media(min-width: 1024px)':{
       paddingTop: 103,
       maxWidth: 1024,
-      "height": "1770px"
+      "height": "2770px"
     }
   }),
   main: css({
@@ -81,7 +85,8 @@ const styles = {
   infos: css({
     position: 'absolute',
     bottom: 30,
-    left: 30
+    left: 30,
+    right: 30
   }),
   description: css({
     position: 'absolute',
@@ -155,13 +160,54 @@ const content = {
     description: 'Muitas pessoas estudam CSS há anos e cometem diversos erros. Nesta palestra, vamos encarar vários vícios e aprender dicas para fazer do CSS acessível e proporcionando boa experiência aos usuários.'
   },
   {
-    talk: 'Em breve',
-    photo: speaker_man
+    name: 'Kete Rufino',
+    talk: 'CSS in JS - styled-components no Nubank',
+    twitter: ['twitter', 'ketemr'],
+    github: ['github','ketemartinsrufino'],
+    photo: speaker_kete,
+    description: 'CSS in JS está em alta e a Nubank decidiu adotar uma das ferramentas mais conhecidas do mundo React para isso: o styled-components. Nessa talk, Kete divide o palco com Rod Costa, e juntos, vão mostrar como trabalham com CSS in JS no Nubank.'
   },
   {
-    talk: 'Em breve',
-    photo: speaker_woman
+    name: 'Rod Costa',
+    talk: 'CSS in JS - styled-components no Nubank',
+    twitter: ['twitter', 'OiRodCosta'],
+    github: ['github','oirodolfo'],
+    photo: speaker_rod,
+    description: 'Styled-components vem ajudando a estilizar componentes React com uma separação clara de conceitos e permitindo utilizar conhecimentos e escrita de CSS já existente. Junto com Kete Rufino, Rod Costa apresentará este case do Nubank.'
+  },
+  {
+    name: 'Júlio de Lima',
+    talk: 'Testes - Desenvolvendo como QAs',
+    twitter: ['twitter', 'juliodelimas'],
+    github: ['github','juliointest'],
+    photo: speaker_julio,
+    description: 'Desenvolver com foco em testes para ganhar segurança nas entregas e em produção. Júlio de Lima vai mostrar como o QA pensa uma aplicação React em testes desde os requisitos até a entrega das interfaces.'
+  },
+  {
+    name: 'Rodrigo "Pokémon" Cardoso',
+    talk: 'Stand-Up: Front-End Raiz vs Nutella',
+    twitter: ['twitter', 'pokemaobr'],
+    github: ['github','pokemaobr'],
+    photo: speaker_pokemon,
+    description: 'O que fizemos hoje no front-end realmente são as melhores coisas? De um jeito engraçado o Pokémon da iMasters mostra o que era feito no início da internet (raiz), até um tempo atrás (mais ou menos) e o hoje (nutella).'
+  },
+  {
+    name: 'William Grasel',
+    talk: 'E o Angular? Morreu ou não?',
+    twitter: ['twitter', 'willgmbr'],
+    github: ['github','willgm'],
+    photo: speaker_grasel,
+    description: 'O Angular continua sendo um dos framework mais importantes do mercado. É fortemente usado por bancos, por grandes players do mercado e até mesmo pela NASA. Entenda as novidades criadas pelo Google e o que vem por aí.'
+  },
+  {
+    name: 'Isa Silveira',
+    talk: 'Machine Learning, JavaScript e o ócio',
+    twitter: ['twitter', 'silveira_bells'],
+    github: ['github','bella-silveira'],
+    photo: speaker_isa,
+    description: 'Sabe aquele momento em que você precisa fazer alguma tarefa, mas simplesmente não quer se dar ao trabalho? Aprenda como o Machine Learning pode automatizar suas atividades cotidianas através de algoritmos e recupere seu tempo precioso.'
   }
+  
   
 
   // {

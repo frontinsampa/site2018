@@ -15,8 +15,9 @@ const styles ={
   h6: css({
     "fontFamily": Globals.fonts.bold,
     "fontSize": "18px",
-    "lineHeight": "1.67",
+    "lineHeight": "1",
     margin: 0,
+    marginBottom: 10,
     textTransform: 'uppercase',
     color: Globals.colors.purple
   }),
@@ -24,7 +25,8 @@ const styles ={
     "fontFamily": Globals.fonts.regular,
     "fontSize": "18px",
     margin: 0,
-    "lineHeight": "1.67",
+    marginBottom: 10,
+    "lineHeight": "1",
     color: Globals.colors.white
   }),
   small: css({
