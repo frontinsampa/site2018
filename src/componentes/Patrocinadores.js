@@ -125,8 +125,8 @@ const content = {
       src: locaweb
     },
     {
-      link: 'https://www.banconeon.com.br/',
-      alt: 'Banco Neon',
+      link: 'https://www.neon.com.br/',
+      alt: 'Neon',
       src: neon
     },
     {
