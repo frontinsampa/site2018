@@ -11,6 +11,7 @@ import Palestrantes from './componentes/Palestrantes'
 import Apoiadores from './componentes/Apoiadores'
 import Construtores from './componentes/Construtores'
 import Contato from './componentes/Contato'
+import Programacao from './componentes/Programacao'
 
 import background_dots from './imgs/background-dots.png'
 import './css/styles.css'
@@ -42,6 +43,7 @@ class App extends Component {
         <Header/>
         <Evento/>
         <Palestrantes/>
+        <Programacao/>
         <Apresentador/>
         <Local/>
         <Patrocinadores/>

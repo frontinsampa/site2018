@@ -74,7 +74,7 @@ const content = {
   alt: 'Front In Sampa',
   description: 'Em Julho estamos de volta ao Teatro do Maksoud Plaza Hotel, para reunir a comunidade em torno do melhor conteúdo sobre desenvolvimento de interfaces através de apresentações inesquecíveis.',
   button: 'submit',
-  label: 'Inscreva-se',
+  label: 'Ingressos Esgotados',
   link: 'https://www.sympla.com.br/front-in-sampa-2018__193402'
 }
 
