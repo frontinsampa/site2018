@@ -91,52 +91,35 @@ export default class Programacao extends Component {
               <div  {...styles.main}>
                 <div>
                   <Text type={'h3'} label={content.description} align={content.align} color={[Globals.colors.red,Globals.colors.purple]} />
-                  <p>08h00 <br />
-                    <strong>Credenciamento</strong><br />
-                    09h00 <br />
-                    <strong>Abertura</strong><br />
-                    09h05 <br />
-                    <strong>Raphael Fabeni</strong><br />
+                  <p>08h00 - <strong>Credenciamento</strong><br />
+                    09h00 - <strong>Abertura</strong><br />
+                    09h05 - <strong>Raphael Fabeni</strong><br />
                     Cultura de Desenvolvimento - A Saga Continua<br />
-                    09h30 <br />
-                    <strong>Alda Rocha</strong><br />
+                    09h30 - <strong>Alda Rocha</strong><br />
                     UXD: A Manopla do Infinito Design<br />
-                    10h00 <br />
-                    <strong>J&uacute;lio de Lima</strong><br />
+                    10h00 - <strong>J&uacute;lio de Lima</strong><br />
                     Desenvolvendo como QAs<br />
-                    10h30 <br />
-                    <strong>Fernanda Bernardo</strong><br />
+                    10h30 - <strong>Fernanda Bernardo</strong><br />
                     Perceived Performance<br />
-                    11h20 <br />
-                    <strong>Rodrigo Pok&eacute;monBR</strong><br />
+                    11h20 - <strong>Rodrigo Pok&eacute;monBR</strong><br />
                     Front-end Raiz vs Front-end Nutella<br />
-                    11h30 <br />
-                    <strong>Intervalo</strong><br />
-                    13h00 <br />
-                    <strong>Lucas Silva</strong><br />
+                    11h30 - <strong>Intervalo</strong><br />
+                    13h00 - <strong>Lucas Silva</strong><br />
                     Acessibilidade e UX em CSS<br />
-                    13h30 <br />
-                    <strong>Fernando Daciuk</strong><br />
+                    13h30 - <strong>Fernando Daciuk</strong><br />
                     Immutable JavaScript<br />
-                    14h20 <br />
-                    <strong>Kete Rufino e Rod Costa</strong><br />
+                    14h20 - <strong>Kete Rufino e Rod Costa</strong><br />
                     Bai&atilde;o de Dois: CSS in JS com styled-components<br />
-                    14h50 <br />
-                    <strong>William Grasel</strong><br />
+                    14h50 - <strong>William Grasel</strong><br />
                     E o Angular? Ainda vive?<br />
-                    15h30 <br />
-                    <strong>Coffee Break</strong><br />
-                    16h00 <br />
-                    <strong>Isa Silveira</strong><br />
+                    15h30 - <strong>Coffee Break</strong><br />
+                    16h00 - <strong>Isa Silveira</strong><br />
                     Machine Learning + JS: A Import&acirc;ncia do &Oacute;cio<br />
-                    16h50 <br />
-                    <strong>Talk Show do Marsiglio</strong><br />
+                    16h50 - <strong>Talk Show do Marsiglio</strong><br />
                     Com Felipe Fialho e mais<br />
-                    17h20 <br />
-                    <strong>Matheus Lima</strong><br />
+                    17h20 - <strong>Matheus Lima</strong><br />
                     JavaScript e Blockchain<br />
-                    17h50 <br />
-                    <strong>Sorteios e Encerramentos</strong></p>
+                    17h50 - <strong>Sorteios e Encerramentos</strong></p>
                 </div>
               </div>
             </div>
